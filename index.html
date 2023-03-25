@@ -13,13 +13,14 @@
     <section>
         <div class="main">
             <h1> Faça o download do seu vídeo do youtube sem anuncios ou vírus!!</h1>
-            <p><s>Apenas vídeos do youtube</s></p>
-            <form style="width: 20px;" action="/" method="post">
+            <p><b>Apenas vídeos do youtube</b></p>
+            <form action="{{ url_for('index') }}" method="post">
                 <div class="input-url">
+                    <label for="floatingInput">Informe o link do vídeo que será baixado do Youtube:</label>
                     <input type="text" class="" name="url" id="floatingInput" placeholder="insira a url">
-                    <label for="floatingInput">Url do vídeo</label>
+                    <button type="submit" name="baixar" class="btn-baixar">Buscar</button>
+                
                 </div>
-            <button type="submit" name="baixar" class="btn-baixar">Baixar</button>
 
             </form>
 
